@@ -24,11 +24,6 @@ public class StreamEventsService : StreamEvents.StreamEventsBase
 
                 await Task.Delay(request.DelaySeconds * 1000);
             }
-            
-                //await Task.FromResult(new ListenEventsResponse
-                //{
-            
-                //});
         }
     }
 }

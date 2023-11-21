@@ -1,2 +1,0 @@
-obj/Debug/net8.0/Demo.cs \
-obj/Debug/net8.0/DemoGrpc.cs: ../../Server/Protos/Demo.proto

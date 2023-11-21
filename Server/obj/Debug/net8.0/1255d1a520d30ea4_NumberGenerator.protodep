@@ -1,2 +1,0 @@
-obj/Debug/net8.0/Protos/NumberGenerator.cs \
-obj/Debug/net8.0/Protos/NumberGeneratorGrpc.cs: Protos/NumberGenerator.proto

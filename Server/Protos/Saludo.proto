@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "Server";
+
+package saludo;
+
+// The greeting service definition.
+service Saludo {
+  // Sends a greeting
+  rpc MetodoSaludo (PeticionSaludo) returns (RespuestaSaludo);
+}
+
+// The request message containing the user's name.
+message PeticionSaludo {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message RespuestaSaludo {
+  string message = 1;
+}

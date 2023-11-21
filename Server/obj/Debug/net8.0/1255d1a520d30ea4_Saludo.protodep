@@ -1,0 +1,2 @@
+obj/Debug/net8.0/Protos/Saludo.cs \
+obj/Debug/net8.0/Protos/SaludoGrpc.cs: Protos/Saludo.proto

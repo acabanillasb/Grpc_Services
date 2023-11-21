@@ -1,0 +1,6 @@
+{
+    "serial":"I-D-DEV-001-MANHATTANANY-CAN",
+    "asset":"C400AD25E5D5",
+    "module":"machine",
+    "msgType":"getIP"
+}

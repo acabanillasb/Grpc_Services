@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "Server";
+
+package JsonFile;
+
+// servicio envio json
+service JsonFile {
+  rpc MetodoJsonFile (PeticionJsonFile) returns (RespuestaJsonFile);
+}
+
+message PeticionJsonFile {
+  string json_content = 1;
+}
+
+message RespuestaJsonFile {
+  string json_result = 1;
+}

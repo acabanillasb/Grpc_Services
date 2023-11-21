@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "Server";
+
+package streamEvents;
+
+// The greeting service definition.
+service StreamEvents {
+  // Sends a greeting
+  rpc ListenEvents (ListenEventsRequest) returns (stream ListenEventsResponse);
+}
+
+// The request message 
+message ListenEventsRequest {
+  repeated string messageRequest = 1;
+  int32 delaySeconds = 2;
+}
+
+// The response message 
+message ListenEventsResponse {
+  string messageResponse = 1;
+}

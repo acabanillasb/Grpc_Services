@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "Server";
+
+package pizza;
+
+// The greeting service definition.
+service Pizza {
+  // Sends a greeting
+  rpc MetodoPizza (PeticionPizza) returns (RespuestaPizza);
+}
+
+// The request message containing the user's name.
+message PeticionPizza {
+  string tipo = 1;
+}
+
+// The response message containing the greetings.
+message RespuestaPizza {
+  repeated string ingredientes = 1;
+}

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "Server";
+
+package fechaHora;
+
+// The greeting service definition.
+service FechaHora {
+  // Sends a greeting
+  rpc MetodoFechaHora (PeticionFechaHora) returns (RespuestaFechaHora);
+}
+
+// The request message 
+message PeticionFechaHora {
+
+}
+
+// The response message containing the greetings.
+message RespuestaFechaHora {
+  string fechaHoy = 1;
+  string horaHoy = 2;
+}

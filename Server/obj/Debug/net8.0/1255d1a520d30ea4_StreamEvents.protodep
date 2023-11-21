@@ -1,0 +1,2 @@
+obj/Debug/net8.0/Protos/StreamEvents.cs \
+obj/Debug/net8.0/Protos/StreamEventsGrpc.cs: Protos/StreamEvents.proto

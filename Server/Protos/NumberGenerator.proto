@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "Server";
+
+package NumberGenerator;
+
+service NumberGenerator {
+  rpc Generate(GenerationOptions) returns (stream GeneratedNumber);
+}
+
+message GenerationOptions {
+  int32 start = 1;
+  int32 delaySeconds = 2;
+}
+
+message GeneratedNumber {
+  int32 number = 1;
+  int64 generatedAtTicks = 2;
+}

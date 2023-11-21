@@ -27,4 +27,5 @@ jobs:
     - name: cd
       run: cd Server
     - name: Run
+      working-directory: ./Server
       run: dotnet run
